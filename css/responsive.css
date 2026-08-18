@@ -3035,4 +3035,117 @@ body {
 
 }
 
+/* =====================================================
+   FINAL SCROLL FIX - 9 SERVICE CARDS
+===================================================== */
+
+html {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+body {
+    height: auto !important;
+    min-height: 100vh !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    position: relative !important;
+
+    padding-bottom: 125px !important;
+}
+
+/* MAIN CONTENT MUST GROW */
+.main-container {
+    height: auto !important;
+    min-height: auto !important;
+
+    overflow: visible !important;
+
+    position: relative !important;
+}
+
+/* SERVICE SECTION */
+.services-grid {
+    height: auto !important;
+    min-height: 0 !important;
+
+    overflow: visible !important;
+
+    position: relative !important;
+}
+
+/* CARDS */
+.service-card {
+    position: relative !important;
+
+    overflow: hidden !important;
+
+    flex-shrink: 0 !important;
+}
+
+/* IMPORTANT:
+   Do NOT let any parent cut the cards */
+.services-grid,
+.services-grid *,
+.main-container {
+    max-height: none !important;
+}
+
+/* MOBILE */
+@media (max-width:600px) {
+
+    html,
+    body {
+        height: auto !important;
+        min-height: 100% !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    body {
+        min-height: 100vh !important;
+        padding-top: 85px !important;
+        padding-bottom: 125px !important;
+    }
+
+    .main-container {
+        height: auto !important;
+        min-height: 0 !important;
+
+        overflow: visible !important;
+    }
+
+    .services-grid {
+        height: auto !important;
+        min-height: 0 !important;
+
+        overflow: visible !important;
+
+        display: grid !important;
+
+        grid-template-columns: repeat(3, 1fr) !important;
+
+        gap: 10px !important;
+    }
+
+    .service-card {
+        height: 82px !important;
+        min-height: 82px !important;
+
+        position: relative !important;
+
+        overflow: hidden !important;
+    }
+
+    /* Footer image should NOT block page */
+    .footer-city-image {
+        pointer-events: none !important;
+    }
+}
+
 
