@@ -1,0 +1,2970 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        घरपोच सेवा | चिखली नगर परिषद
+    </title>
+
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Mukta",sans-serif;
+
+    background:#fffaf5;
+
+    color:#3d3028;
+
+    line-height:1.5;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea{
+    font-family:"Mukta",sans-serif;
+}
+
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.page{
+
+    width:100%;
+
+    max-width:1140px;
+
+    margin:auto;
+
+    padding:
+        18px
+        20px
+        45px;
+}
+
+
+/* =====================================================
+   GOVERNMENT HEADER
+===================================================== */
+
+.gov-top{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:
+        10px 0
+        16px;
+
+    margin-bottom:18px;
+
+    border-bottom:
+        3px solid #f3d4b8;
+}
+
+
+/* LEFT */
+
+.gov-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+
+/* EMBLEM */
+
+.gov-emblem{
+
+    width:58px;
+
+    height:58px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #d95d00,
+            #f39218
+        );
+
+    border:
+        2px solid #fff;
+
+    outline:
+        2px solid #d95d00;
+
+    box-shadow:
+        0 6px 18px
+        rgba(220,90,0,.18);
+}
+
+
+/* TITLE */
+
+.gov-title h1{
+
+    color:#65320e;
+
+    font-size:27px;
+
+    font-weight:800;
+
+    line-height:1.2;
+}
+
+.gov-title p{
+
+    color:#806f63;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-top:2px;
+}
+
+
+/* ONLINE */
+
+.online-badge{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    padding:
+        7px 17px;
+
+    border-radius:30px;
+
+    background:#fff3e6;
+
+    border:
+        1px solid #f1c79f;
+
+    color:#d85f00;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.online-badge i{
+
+    font-size:12px;
+
+    color:#e66a00;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.back-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:
+        9px 17px;
+
+    margin-bottom:18px;
+
+    border-radius:9px;
+
+    background:#fff;
+
+    border:
+        1px solid #ead7c8;
+
+    color:#684b39;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 3px 10px
+        rgba(120,65,20,.05);
+
+    transition:.25s ease;
+}
+
+.back-btn:hover{
+
+    color:#fff;
+
+    background:#e66a00;
+
+    border-color:#e66a00;
+
+    transform:
+        translateX(-3px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:245px;
+
+    padding:32px;
+
+    margin-bottom:27px;
+
+    border-radius:20px;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            110deg,
+            #a94400,
+            #e66a00,
+            #f18b1b
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(190,76,0,.18);
+}
+
+
+/* CIRCLE */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    right:-100px;
+
+    top:-130px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.10);
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    left:-90px;
+
+    bottom:-110px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.08);
+}
+
+
+/* CONTENT */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+
+/* TEXT */
+
+.hero-text{
+
+    max-width:680px;
+}
+
+.hero-text h2{
+
+    font-size:36px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:7px;
+}
+
+.hero-text h2 span{
+
+    color:#fff4dc;
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    opacity:.96;
+
+    margin-bottom:15px;
+}
+
+
+/* POINTS */
+
+.hero-points{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+}
+
+.hero-point{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:
+        5px 12px;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.14);
+
+    border:
+        1px solid
+        rgba(255,255,255,.22);
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.hero-point i{
+
+    color:#fff1c7;
+}
+
+
+/* =====================================================
+   HERO ICON
+===================================================== */
+
+.hero-visual{
+
+    width:180px;
+
+    height:170px;
+
+    flex-shrink:0;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.hero-circle{
+
+    width:145px;
+
+    height:145px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.13);
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+
+    font-size:68px;
+
+    box-shadow:
+        inset 0 0 30px
+        rgba(255,255,255,.08);
+}
+
+
+/* FLOAT ICONS */
+
+.hero-float{
+
+    position:absolute;
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    color:#e66a00;
+
+    box-shadow:
+        0 7px 18px
+        rgba(0,0,0,.15);
+}
+
+.hero-float.one{
+
+    right:2px;
+
+    top:12px;
+
+    transform:rotate(8deg);
+}
+
+.hero-float.two{
+
+    left:3px;
+
+    bottom:9px;
+
+    transform:rotate(-8deg);
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:15px;
+
+    color:#603718;
+
+    font-size:24px;
+
+    font-weight:800;
+}
+
+.section-heading::before{
+
+    content:"";
+
+    width:6px;
+
+    height:29px;
+
+    border-radius:10px;
+
+    background:#e66a00;
+}
+
+
+/* =====================================================
+   HOME SERVICE CARD
+===================================================== */
+
+.home-service-section{
+
+    margin-bottom:30px;
+}
+
+.home-service-card{
+
+    display:grid;
+
+    grid-template-columns:
+        420px 1fr;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border:
+        1px solid #ead8c8;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 6px 20px
+        rgba(80,40,10,.07);
+
+    transition:.3s ease;
+}
+
+.home-service-card:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(190,76,0,.13);
+}
+
+
+/* =====================================================
+   IMAGE SLIDER
+===================================================== */
+
+.home-service-image{
+
+    position:relative;
+
+    height:285px;
+
+    overflow:hidden;
+
+    background:#eee;
+}
+
+.home-image-slider{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    animation:
+        homeServiceSlider 12s
+        infinite;
+}
+
+.home-image-slider img{
+
+    flex:
+        0 0 100%;
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+/* =====================================================
+   ONE BY ONE SLIDER
+===================================================== */
+
+@keyframes homeServiceSlider{
+
+    0%,
+    28%{
+
+        transform:
+            translateX(0);
+    }
+
+    33%,
+    61%{
+
+        transform:
+            translateX(-100%);
+    }
+
+    66%,
+    94%{
+
+        transform:
+            translateX(-200%);
+    }
+
+    100%{
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+/* IMAGE OVERLAY */
+
+.home-service-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.45),
+            transparent 58%
+        );
+}
+
+
+/* IMAGE BADGE */
+
+.home-service-badge{
+
+    position:absolute;
+
+    left:15px;
+
+    bottom:14px;
+
+    z-index:5;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    padding:
+        7px 13px;
+
+    border-radius:6px;
+
+    color:#b84d00;
+
+    background:
+        rgba(255,255,255,.95);
+
+    font-size:13px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,.15);
+}
+
+.home-service-badge i{
+
+    color:#e66a00;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.home-service-content{
+
+    padding:
+        28px 30px;
+}
+
+
+/* TITLE */
+
+.home-service-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    margin-bottom:12px;
+}
+
+.home-service-icon{
+
+    width:49px;
+
+    height:49px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:#fff2e4;
+
+    border:
+        1px solid #f1d0b0;
+
+    color:#d85f00;
+
+    font-size:21px;
+}
+
+.home-service-title h3{
+
+    color:#603718;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    line-height:1.2;
+}
+
+.home-service-title span{
+
+    display:block;
+
+    color:#9a8272;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-top:1px;
+}
+
+
+/* DESCRIPTION */
+
+.home-service-content > p{
+
+    max-width:650px;
+
+    color:#71665f;
+
+    font-size:15px;
+
+    line-height:1.65;
+
+    margin-bottom:16px;
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.home-service-list{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:8px 18px;
+
+    margin-bottom:20px;
+}
+
+.home-service-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    color:#62554d;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.home-service-list i{
+
+    color:#e66a00;
+
+    font-size:12px;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.home-service-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:none;
+
+    padding:
+        10px 19px;
+
+    border-radius:8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d85f00,
+            #ef8414
+        );
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 5px 13px
+        rgba(210,90,0,.18);
+
+    transition:.25s ease;
+}
+
+.home-service-btn:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(210,90,0,.25);
+}
+
+
+/* =====================================================
+   FORM SECTION
+===================================================== */
+
+.form-section{
+
+    background:#fff;
+
+    border:
+        1px solid #ead8c8;
+
+    border-radius:18px;
+
+    padding:
+        26px 28px 29px;
+
+    margin-bottom:28px;
+
+    box-shadow:
+        0 6px 20px
+        rgba(80,40,10,.05);
+}
+
+
+/* FORM TITLE */
+
+.form-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#603718;
+
+    font-size:22px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+}
+
+.form-title i{
+
+    color:#e66a00;
+
+    font-size:23px;
+}
+
+
+/* FORM GRID */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        16px 23px;
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+}
+
+.form-group.full{
+
+    grid-column:
+        1 / -1;
+}
+
+
+/* LABEL */
+
+.form-group label{
+
+    color:#4f3c30;
+
+    font-size:14px;
+
+    font-weight:700;
+}
+
+.required{
+
+    color:#d82e21;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    border:
+        1.5px solid #e4d6cb;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    color:#3f3027;
+
+    outline:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s ease;
+}
+
+.form-group input{
+
+    height:49px;
+
+    padding:
+        0 14px;
+}
+
+.form-group textarea{
+
+    min-height:95px;
+
+    resize:vertical;
+
+    padding:
+        11px 14px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#aaa09a;
+
+    font-weight:500;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#e66a00;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(230,106,0,.10);
+
+    background:#fffdf9;
+}
+
+
+/* =====================================================
+   CUSTOM DROPDOWN
+===================================================== */
+
+.custom-dropdown{
+
+    position:relative;
+
+    width:100%;
+}
+
+.dropdown-selected{
+
+    width:100%;
+
+    height:49px;
+
+    padding:
+        0 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    border:
+        1.5px solid #e4d6cb;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    color:#3f3027;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.dropdown-selected:hover{
+
+    border-color:#e66a00;
+
+    background:#fffaf6;
+}
+
+.custom-dropdown.active
+.dropdown-selected{
+
+    border-color:#e66a00;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(230,106,0,.10);
+}
+
+
+/* ARROW */
+
+.dropdown-arrow{
+
+    color:#e66a00;
+
+    font-size:12px;
+
+    transition:.25s ease;
+}
+
+.custom-dropdown.active
+.dropdown-arrow{
+
+    transform:
+        rotate(180deg);
+}
+
+
+/* OPTIONS */
+
+.dropdown-options{
+
+    position:absolute;
+
+    top:
+        calc(100% + 6px);
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border:
+        1px solid #efd6c1;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 12px 28px
+        rgba(90,45,10,.16);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+        translateY(-5px);
+
+    transition:.2s ease;
+}
+
+.custom-dropdown.active
+.dropdown-options{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:
+        translateY(0);
+}
+
+
+/* OPTION */
+
+.dropdown-option{
+
+    padding:
+        10px 14px;
+
+    color:#49382d;
+
+    background:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.18s ease;
+}
+
+.dropdown-option:hover{
+
+    padding-left:18px;
+
+    color:#e66a00;
+
+    background:#fff1e5;
+}
+
+.dropdown-option.selected{
+
+    color:#fff;
+
+    background:#e66a00;
+
+    font-weight:700;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.form-actions{
+
+    grid-column:
+        1 / -1;
+
+    display:flex;
+
+    gap:11px;
+
+    margin-top:4px;
+}
+
+.btn-submit{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:none;
+
+    padding:
+        12px 27px;
+
+    border-radius:9px;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d85f00,
+            #f28b18
+        );
+
+    font-size:15px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 6px 16px
+        rgba(210,90,0,.18);
+
+    transition:.25s ease;
+}
+
+.btn-submit:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 9px 20px
+        rgba(210,90,0,.25);
+}
+
+
+.btn-reset{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:
+        1.5px solid #dfd2c8;
+
+    padding:
+        12px 25px;
+
+    border-radius:9px;
+
+    background:#fff;
+
+    color:#75685f;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.btn-reset:hover{
+
+    color:#d85f00;
+
+    border-color:#e5b78e;
+
+    background:#fff5eb;
+}
+
+
+/* =====================================================
+   INFORMATION BOX
+===================================================== */
+
+.info-box{
+
+    padding:24px;
+
+    margin-bottom:28px;
+
+    border:
+        1px solid #f0d3b5;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5e9,
+            #fffaf5
+        );
+}
+
+.info-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    color:#c95a00;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    margin-bottom:14px;
+}
+
+.info-title i{
+
+    color:#e39b20;
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:10px;
+}
+
+.info-item{
+
+    padding:
+        10px 13px;
+
+    border:
+        1px solid #eaded5;
+
+    border-radius:9px;
+
+    background:#fff;
+
+    color:#71665f;
+
+    font-size:14px;
+}
+
+.info-item strong{
+
+    color:#603718;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.page-footer{
+
+    text-align:center;
+
+    padding:
+        17px 10px;
+
+    border-top:
+        1px solid #ead8c8;
+
+    color:#8a786c;
+
+    font-size:13px;
+}
+
+.page-footer strong{
+
+    color:#603718;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .home-service-card{
+
+        grid-template-columns:
+            350px 1fr;
+    }
+
+    .home-service-image{
+
+        height:270px;
+    }
+
+    .home-service-content{
+
+        padding:23px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .page{
+
+        padding:
+            10px
+            10px
+            30px;
+    }
+
+
+    /* HEADER */
+
+    .gov-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+    }
+
+    .gov-title h1{
+
+        font-size:21px;
+    }
+
+    .gov-title p{
+
+        font-size:12px;
+    }
+
+    .online-badge{
+
+        font-size:11px;
+
+        padding:
+            5px 12px;
+    }
+
+
+    /* HERO */
+
+    .hero{
+
+        min-height:auto;
+
+        padding:
+            23px 18px;
+
+        border-radius:18px;
+    }
+
+    .hero-content{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .hero-text h2{
+
+        font-size:27px;
+    }
+
+    .hero-text p{
+
+        font-size:14px;
+    }
+
+    .hero-point{
+
+        font-size:11px;
+    }
+
+    .hero-visual{
+
+        width:100%;
+
+        height:125px;
+    }
+
+    .hero-circle{
+
+        width:110px;
+
+        height:110px;
+
+        font-size:53px;
+    }
+
+
+    /* SERVICE */
+
+    .home-service-card{
+
+        grid-template-columns:1fr;
+
+        border-radius:15px;
+    }
+
+    .home-service-image{
+
+        height:215px;
+    }
+
+    .home-service-content{
+
+        padding:18px;
+    }
+
+    .home-service-title h3{
+
+        font-size:20px;
+    }
+
+    .home-service-content > p{
+
+        font-size:13px;
+    }
+
+    .home-service-list{
+
+        grid-template-columns:1fr;
+
+        gap:7px;
+    }
+
+    .home-service-btn{
+
+        width:100%;
+
+        justify-content:center;
+    }
+
+
+    /* FORM */
+
+    .form-section{
+
+        padding:
+            19px 16px 22px;
+
+        border-radius:16px;
+    }
+
+    .form-title{
+
+        font-size:19px;
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+        gap:13px;
+    }
+
+    .form-group.full{
+
+        grid-column:auto;
+    }
+
+    .form-actions{
+
+        flex-direction:column;
+    }
+
+    .btn-submit,
+    .btn-reset{
+
+        width:100%;
+    }
+
+
+    /* INFO */
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .info-box{
+
+        padding:18px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:400px){
+
+    .gov-emblem{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:22px;
+    }
+
+    .gov-title h1{
+
+        font-size:19px;
+    }
+
+    .hero-text h2{
+
+        font-size:24px;
+    }
+
+    .home-service-image{
+
+        height:195px;
+    }
+
+}
+.hero-section {
+    position: relative;
+}
+
+.hero-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 12px;
+
+    background: #fff;
+    color: #e8671a;
+
+    border: 1.5px solid #e6d5c8;
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    box-shadow: 0 3px 10px rgba(80, 38, 15, 0.08);
+
+    transition: 0.25s ease;
+}
+
+.hero-back-btn:hover {
+    background: #fff4ea;
+    border-color: #e8671a;
+    transform: translateX(-3px);
+}
+
+.hero-back-btn i {
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .hero-back-btn {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+
+/* =====================================================
+   IMAGE ZOOM
+===================================================== */
+
+.home-service-image img{
+    cursor:zoom-in;
+    transition:transform .3s ease;
+}
+
+/* ZOOM OVERLAY */
+
+.image-zoom-overlay{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.88);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.25s ease;
+}
+
+.image-zoom-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.image-zoom-overlay img{
+    max-width:95%;
+    max-height:90vh;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    cursor:zoom-out;
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.5);
+
+    transform:scale(.85);
+
+    transition:.3s ease;
+}
+
+.image-zoom-overlay.active img{
+    transform:scale(1);
+}
+
+
+/* CLOSE BUTTON */
+
+.image-zoom-close{
+    position:absolute;
+
+    top:20px;
+    right:25px;
+
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#fff;
+    color:#333;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .image-zoom-overlay{
+        padding:10px;
+    }
+
+    .image-zoom-overlay img{
+        max-width:98%;
+        max-height:82vh;
+    }
+
+    .image-zoom-close{
+        top:12px;
+        right:12px;
+
+        width:40px;
+        height:40px;
+    }
+
+}
+.hero-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-back-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   CARD HEADER - FULL WIDTH, NO MARGIN
+========================================================= */
+
+.card-header {
+    position: sticky !important;
+    top: 0 !important;
+
+    width: 100% !important;
+    height: 210px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-image: url("images/gharpoc seva.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border: 0 !important;
+    border-bottom: 4px solid #f26b18 !important;
+
+    border-radius: 0 0 28px 28px !important;
+
+    overflow: hidden;
+
+    z-index: 100 !important;
+}
+
+
+/* =========================================================
+   BACK ARROW
+   ONLY ARROW — NO WHITE BACKGROUND
+========================================================= */
+
+.complaint-header {
+    position: sticky !important;
+}
+
+.header-back-btn {
+    position: absolute !important;
+
+    top: 18px !important;
+    left: 20px !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: transparent !important;
+
+    color: #e5760e !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    text-decoration: none !important;
+
+    font-size: 26px !important;
+
+    box-shadow: none !important;
+
+    z-index: 9999 !important;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.header-back-btn:hover {
+    background: transparent !important;
+
+    color: #ffe1cc !important;
+
+    transform: translateX(-4px);
+}
+
+.header-back-btn:active {
+    background: transparent !important;
+
+    transform: translateX(-2px) scale(.92);
+}
+
+.header-back-btn i {
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .card-header {
+        height: 165px !important;
+
+        border-radius: 0 0 22px 22px !important;
+    }
+
+    .header-back-btn {
+        top: 14px !important;
+        left: 14px !important;
+
+        width: 38px !important;
+        height: 38px !important;
+
+        font-size: 23px !important;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE 650px
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .card-header {
+        height: 145px !important;
+
+        border-radius: 0 0 18px 18px !important;
+    }
+
+    .header-back-btn {
+        top: 10px !important;
+        left: 10px !important;
+
+        width: 34px !important;
+        height: 34px !important;
+
+        font-size: 21px !important;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .card-header {
+        height: 132px !important;
+    }
+
+    .header-back-btn {
+        top: 9px !important;
+        left: 9px !important;
+
+        width: 32px !important;
+        height: 32px !important;
+
+        font-size: 20px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .card-header {
+        height: 125px !important;
+    }
+
+    .header-back-btn {
+        top: 8px !important;
+        left: 8px !important;
+
+        width: 30px !important;
+        height: 30px !important;
+
+        font-size: 18px !important;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     HEADER - FULL WIDTH (page च्या बाहेर)
+===================================================== -->
+
+<div class="card-header complaint-header">
+
+    <!-- BACK BUTTON -->
+    <a href="javascript:history.back();"
+       class="header-back-btn"
+       title="मागे जा"
+       aria-label="मागे जा">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </a>
+
+</div>
+
+
+<div class="page">
+
+
+    <!-- =================================================
+         SERVICE
+    ================================================= -->
+
+    <h2 class="section-heading">
+
+        घरपोच सेवा
+
+    </h2>
+
+
+
+    <section class="home-service-section">
+
+
+        <div class="home-service-card">
+
+
+            <!-- IMAGE SLIDER -->
+
+            <div class="home-service-image">
+
+
+                <div class="home-image-slider">
+
+
+                    <!-- IMAGE 1 -->
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85"
+                        alt="नागरिक सेवा">
+
+
+                    <!-- IMAGE 2 -->
+
+                    <img
+                        src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=85"
+                        alt="घरपोच सेवा">
+
+
+                    <!-- IMAGE 3 -->
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=85"
+                        alt="सेवा सुविधा">
+
+                </div>
+
+
+                <div class="home-service-badge">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    घरपोच सेवा
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONTENT -->
+
+            <div class="home-service-content">
+
+
+                <div class="home-service-title">
+
+
+                    <div class="home-service-icon">
+
+                        <i class="fa-solid fa-house-circle-check"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            नागरिक घरपोच सेवा
+                        </h3>
+
+                        <span>
+                            नागरिकांच्या सोयीसाठी उपलब्ध सेवा
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <p>
+
+                    नगर परिषदेकडून नागरिकांना आवश्यक
+                    नागरी सेवा, अर्ज प्रक्रिया आणि
+                    मार्गदर्शनाची सुविधा सुलभ पद्धतीने
+                    उपलब्ध करून देण्यात येते.
+
+                </p>
+
+
+
+                <div class="home-service-list">
+
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        नागरिकांच्या सोयीसाठी सेवा
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        आवश्यक माहिती व मार्गदर्शन
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        ऑनलाइन अर्ज सुविधा
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        सेवा विनंती नोंदणी
+
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    class="home-service-btn"
+                    onclick="document.getElementById('serviceForm').scrollIntoView({behavior:'smooth'})">
+
+                    सेवा विनंती नोंदवा
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FORM
+    ================================================= -->
+
+    <section class="form-section"
+             id="serviceForm">
+
+
+        <div class="form-title">
+
+            <i class="fa-solid fa-clipboard-list"></i>
+
+            घरपोच सेवा विनंती नोंदणी
+
+        </div>
+
+
+
+        <form>
+
+
+            <div class="form-grid">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        नागरिकाचे नाव
+
+                        <span class="required">*</span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        placeholder="नागरिकाचे नाव प्रविष्ट करा"
+                        required>
+
+                </div>
+
+
+
+                <!-- MOBILE -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        मोबाईल क्रमांक
+
+                        <span class="required">*</span>
+
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        maxlength="10"
+                        inputmode="numeric"
+                        placeholder="मोबाईल क्रमांक प्रविष्ट करा"
+                        required>
+
+                </div>
+
+
+
+                <!-- WARD -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        प्रभाग निवडा
+
+                        <span class="required">*</span>
+
+                    </label>
+
+
+                    <div class="custom-dropdown">
+
+
+                        <div class="dropdown-selected">
+
+                            <span class="selected-text">
+
+                                प्रभाग निवडा
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+
+                        </div>
+
+
+
+                        <div class="dropdown-options">
+
+
+                            <div class="dropdown-option selected">
+
+                                प्रभाग निवडा
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                प्रभाग क्र. १
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                प्रभाग क्र. २
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                प्रभाग क्र. ३
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                प्रभाग क्र. ४
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                प्रभाग क्र. ५
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SERVICE TYPE -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        सेवा प्रकार
+
+                        <span class="required">*</span>
+
+                    </label>
+
+
+                    <div class="custom-dropdown">
+
+
+                        <div class="dropdown-selected">
+
+                            <span class="selected-text">
+
+                                सेवा प्रकार निवडा
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+
+                        </div>
+
+
+
+                        <div class="dropdown-options">
+
+
+                            <div class="dropdown-option selected">
+
+                                सेवा प्रकार निवडा
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                घरपोच प्रमाणपत्र सेवा
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                नागरी सेवा माहिती
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                अर्ज व कागदपत्र सेवा
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                तक्रार / सेवा विनंती
+
+                            </div>
+
+
+                            <div class="dropdown-option">
+
+                                इतर सेवा
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group full">
+
+                    <label>
+
+                        पत्ता / ठिकाण
+
+                        <span class="required">*</span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        placeholder="आपला पूर्ण पत्ता प्रविष्ट करा"
+                        required>
+
+                </div>
+
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group full">
+
+                    <label>
+
+                        सेवा विनंती / अतिरिक्त माहिती
+
+                    </label>
+
+
+                    <textarea
+                        placeholder="आपल्याला आवश्यक असलेली सेवा किंवा अतिरिक्त माहिती येथे लिहा..."></textarea>
+
+                </div>
+
+
+
+                <!-- ACTION -->
+
+                <div class="form-actions">
+
+
+                    <button
+                        type="submit"
+                        class="btn-submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        सेवा विनंती नोंदवा
+
+                    </button>
+
+
+
+                    <button
+                        type="reset"
+                        class="btn-reset">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        रीसेट करा
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- =================================================
+         IMPORTANT INFORMATION
+    ================================================= -->
+
+    <section class="info-box">
+
+
+        <div class="info-title">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            नागरिकांसाठी महत्त्वाची माहिती
+
+        </div>
+
+
+
+        <div class="info-grid">
+
+
+            <div class="info-item">
+
+                <strong>
+                    सेवा विनंती:
+                </strong>
+
+                अर्ज भरताना योग्य माहिती प्रविष्ट करावी.
+
+            </div>
+
+
+            <div class="info-item">
+
+                <strong>
+                    मोबाईल क्रमांक:
+                </strong>
+
+                संपर्कासाठी वैध मोबाईल क्रमांक द्यावा.
+
+            </div>
+
+
+            <div class="info-item">
+
+                <strong>
+                    पत्ता:
+                </strong>
+
+                सेवा देण्यासाठी अचूक पत्ता नमूद करावा.
+
+            </div>
+
+
+            <div class="info-item">
+
+                <strong>
+                    नागरिक सहाय्य:
+                </strong>
+
+                आवश्यक असल्यास नगर परिषद कार्यालयाशी संपर्क साधावा.
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================= -->
+
+    <footer class="page-footer">
+
+        © 2026
+
+        <strong>
+            चिखली नगर परिषद
+        </strong>
+
+        — नागरिक सेवा पोर्टल
+
+    </footer>
+
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   CUSTOM DROPDOWNS
+===================================================== */
+
+document
+.querySelectorAll(".custom-dropdown")
+.forEach(function(dropdown){
+
+    const selected =
+        dropdown.querySelector(".dropdown-selected");
+
+    const selectedText =
+        dropdown.querySelector(".selected-text");
+
+    const options =
+        dropdown.querySelectorAll(".dropdown-option");
+
+
+    /* OPEN / CLOSE */
+
+    selected.addEventListener(
+        "click",
+        function(event){
+
+            event.stopPropagation();
+
+
+            document
+            .querySelectorAll(".custom-dropdown")
+            .forEach(function(other){
+
+                if(other !== dropdown){
+
+                    other.classList.remove("active");
+
+                }
+
+            });
+
+
+            dropdown.classList.toggle("active");
+
+        }
+    );
+
+
+    /* OPTION */
+
+    options.forEach(function(option){
+
+        option.addEventListener(
+            "click",
+            function(event){
+
+                event.stopPropagation();
+
+
+                selectedText.textContent =
+                    this.textContent.trim();
+
+
+                options.forEach(
+                    function(item){
+
+                        item.classList.remove(
+                            "selected"
+                        );
+
+                    }
+                );
+
+
+                this.classList.add("selected");
+
+
+                dropdown.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+    });
+
+});
+
+
+
+/* =====================================================
+   CLOSE DROPDOWN OUTSIDE
+===================================================== */
+
+document.addEventListener(
+    "click",
+    function(){
+
+        document
+        .querySelectorAll(".custom-dropdown")
+        .forEach(function(dropdown){
+
+            dropdown.classList.remove(
+                "active"
+            );
+
+        });
+
+    }
+);
+
+
+
+/* =====================================================
+   MOBILE NUMBER
+===================================================== */
+
+document
+.querySelector('input[type="tel"]')
+.addEventListener(
+    "input",
+    function(){
+
+        this.value =
+            this.value
+            .replace(/\D/g,"")
+            .slice(0,10);
+
+    }
+);
+
+
+
+/* =====================================================
+   FORM DEMO
+===================================================== */
+
+document
+.querySelector("form")
+.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+        alert(
+            "आपली सेवा विनंती नोंदविण्यासाठी फॉर्म तयार आहे."
+        );
+
+    }
+);
+
+</script>
+<script>
+
+/* =====================================================
+   IMAGE ZOOM
+===================================================== */
+
+const zoomOverlay = document.createElement("div");
+
+zoomOverlay.className = "image-zoom-overlay";
+
+zoomOverlay.innerHTML = `
+
+    <button class="image-zoom-close">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="" alt="Zoom Image">
+
+`;
+
+document.body.appendChild(zoomOverlay);
+
+
+const zoomImage =
+    zoomOverlay.querySelector("img");
+
+const zoomClose =
+    zoomOverlay.querySelector(".image-zoom-close");
+
+
+/* ALL SERVICE IMAGES */
+
+document
+.querySelectorAll(".home-service-image img")
+.forEach(function(image){
+
+    image.addEventListener("click",function(){
+
+        zoomImage.src = this.src;
+
+        zoomImage.alt = this.alt;
+
+        zoomOverlay.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+
+/* CLOSE */
+
+zoomClose.addEventListener("click",function(){
+
+    zoomOverlay.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+});
+
+
+/* CLICK OUTSIDE IMAGE */
+
+zoomOverlay.addEventListener("click",function(e){
+
+    if(e.target === zoomOverlay){
+
+        zoomOverlay.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+});
+
+
+/* ESC KEY */
+
+document.addEventListener("keydown",function(e){
+
+    if(e.key === "Escape"){
+
+        zoomOverlay.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+});
+
+</script>
+<script src="common.js"></script>
+
+
+</body>
+
+</html>
