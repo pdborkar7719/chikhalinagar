@@ -3148,4 +3148,89 @@ body {
     }
 }
 
+/* =====================================================
+   FINAL - FOOTER IMAGE + MOBILE NAV NORMAL FLOW
+===================================================== */
 
+@media (max-width: 600px) {
+
+    /* FOOTER CITY IMAGE - NOT FIXED */
+    .footer-city-image {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        height: 90px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden !important;
+
+        z-index: 1 !important;
+
+        pointer-events: none !important;
+    }
+
+    .footer-city-image img {
+        display: block !important;
+
+        width: 100% !important;
+        height: 90px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        transform: none !important;
+
+        object-fit: cover !important;
+        object-position: center bottom !important;
+
+        opacity: 1 !important;
+        mix-blend-mode: normal !important;
+
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+    }
+
+
+    /* MOBILE NAV - NOT FIXED */
+    .mobile-bottom-nav {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        height: 58px !important;
+
+        margin: 0 !important;
+        padding: 2px 4px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: space-around !important;
+
+        background: #fff !important;
+
+        border-radius: 0 !important;
+        border: 1px solid #e7e7e7 !important;
+
+        box-shadow: 0 -2px 12px rgba(0,0,0,.12) !important;
+
+        z-index: 1 !important;
+    }
+
+
+    /* FIXED NAV साठी दिलेली extra body space काढा */
+    body {
+        padding-bottom: 0 !important;
+    }
+}
